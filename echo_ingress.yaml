@@ -8,11 +8,11 @@ metadata:
 spec:
   tls:
   - hosts:
-    - echo1.ibloov.com
-    - echo2.ibloov.com
+    - echo1.xample.com
+    - echo2.xample.com
     secretName: echo-tls
   rules:
-    - host: echo1.ibloov.com
+    - host: echo1.xample.com
       http:
         paths:
           - pathType: Prefix
@@ -22,7 +22,7 @@ spec:
                 name: echo1
                 port:
                   number: 80
-    - host: echo2.ibloov.com
+    - host: echo2.xample.com
       http:
         paths:
           - pathType: Prefix
